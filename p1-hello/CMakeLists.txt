@@ -1,5 +1,10 @@
 #设置项目名称 HELLO
 PROJECT (HELLO)
+#PROJECT(projectname [CXX] [C] [Java])
+#你可以用这个指令定义工程名称，并可指定工程支持的语言，支持的语言列表是可以忽略的，
+#默认情况表示支持所有语言。这个指令隐式的定义了两个cmake 变量:
+#<projectname>_BINARY_DIR 以及<projectname>_SOURCE_DIR
+
 
 #变量SRC_LIST 赋值 main.c
 SET(SRC_LIST main.c)
